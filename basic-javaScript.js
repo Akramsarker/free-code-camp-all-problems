@@ -3,7 +3,12 @@
 /* This is a multi-line comment */
 
 // Declare JavaScript Variables (2)
-var myName = "Md Akram Sheikh";
+var myName;
+
+// Storing Values with the Assignment Operator(3)
+var a;
+a = 7;
+console.log(a);
 
 // Problem Number of 63
 function testNotEqual(val) {
