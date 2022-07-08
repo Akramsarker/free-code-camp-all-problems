@@ -10,6 +10,13 @@ var a;
 a = 7;
 console.log(a);
 
+// Assigning the Value of One Variable to Another(4)
+var a;
+a = 7;
+var b;
+b = a;
+console.log(b);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
