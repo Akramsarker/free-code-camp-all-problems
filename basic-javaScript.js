@@ -17,6 +17,9 @@ var b;
 b = a;
 console.log(b);
 
+// Initializing Variables with the Assignment Operator(5)
+var a = 9;
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
