@@ -20,6 +20,10 @@ console.log(b);
 // Initializing Variables with the Assignment Operator(5)
 var a = 9;
 
+// Declare String Variables(6)
+var myFirstName = "Akram";
+var myLastName = "sheikh";
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
