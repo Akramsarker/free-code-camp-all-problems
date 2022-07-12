@@ -24,7 +24,7 @@ var a = 9;
 var myFirstName = "Akram";
 var myLastName = "sheikh";
 
-// Understanding Uninitialized Variables
+// Understanding Uninitialized Variables(7)
 var a = 5;
 var b = 10;
 var c = "I am a";
@@ -32,6 +32,14 @@ a = a + 1;
 b = b + 5;
 c = c + " String!";
 console.log(a, b, c);
+
+// Understanding Case Sensitivity in Variables(8)
+var studlyCapVar;
+var properCamelCase;
+var titleCaseOver;
+studlyCapVar = 10;
+properCamelCase = "A String";
+titleCaseOver = 9000;
 
 // Problem Number of 63
 function testNotEqual(val) {
