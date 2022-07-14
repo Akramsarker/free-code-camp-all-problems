@@ -41,9 +41,15 @@ studlyCapVar = 10;
 properCamelCase = "A String";
 titleCaseOver = 9000;
 
-// Explore Differences Between the var and let Keywords
+// Explore Differences Between the var and let Keywords(9)
 let catName = "Oliver";
 let catSound = "Meow!";
+
+// Declare a Read-Only Variable with the const Keyword(10)
+const FCC = "freeCodeCamp";
+let fact = "is cool!";
+fact = "is awesome!";
+console.log(FCC, fact);
 
 // Problem Number of 63
 function testNotEqual(val) {
