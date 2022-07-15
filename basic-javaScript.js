@@ -51,6 +51,10 @@ let fact = "is cool!";
 fact = "is awesome!";
 console.log(FCC, fact);
 
+// Add Two Numbers with JavaScript(11)
+const sum = 10 + 10;
+console.log(sum);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
