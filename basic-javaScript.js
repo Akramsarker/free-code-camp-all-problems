@@ -57,12 +57,16 @@ console.log(sum);
 
 // Subtract One Number from Another with JavaScript(12)
 const difference = 45 - 33;
+console.log(difference);
 
 // Multiply Two Numbers with JavaScript(13)
 const product = 8 * 10;
-
 console.log(product);
-console.log(difference);
+
+// Divide One Number by Another with JavaScript
+const quotient = 66 / 33;
+console.log(quotient);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
