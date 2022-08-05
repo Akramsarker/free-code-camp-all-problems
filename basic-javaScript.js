@@ -63,9 +63,14 @@ console.log(difference);
 const product = 8 * 10;
 console.log(product);
 
-// Divide One Number by Another with JavaScript
+// Divide One Number by Another with JavaScript(14)
 const quotient = 66 / 33;
 console.log(quotient);
+
+// Increment a Number with JavaScript(15)
+let myVar = 87;
+myVar++;
+console.log(myVar);
 
 // Problem Number of 63
 function testNotEqual(val) {
