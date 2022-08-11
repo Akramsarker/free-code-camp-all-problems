@@ -72,6 +72,11 @@ let myVar = 87;
 myVar++;
 console.log(myVar);
 
+// Decrement a Number with JavaScript(16)
+// let myVar = 11;
+// myVar--;
+// console.log(myVar)
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
