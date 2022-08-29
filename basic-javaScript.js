@@ -77,6 +77,9 @@ console.log(myVar);
 // myVar--;
 // console.log(myVar)
 
+// Create Decimal Numbers with JavaScript(17)
+var myDecimal = 0.009;
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
