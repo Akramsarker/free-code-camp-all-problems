@@ -80,6 +80,10 @@ console.log(myVar);
 // Create Decimal Numbers with JavaScript(17)
 var myDecimal = 0.009;
 
+// Multiply Two Decimals with JavaScript(18)
+const product2 = 2.0 * 2.5;
+console.log(product2);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
