@@ -84,6 +84,10 @@ var myDecimal = 0.009;
 const product2 = 2.0 * 2.5;
 console.log(product2);
 
+// Divide One Decimal by Another with JavaScript
+const quotientTwo = 4.4 / 2.0;
+console.log(quotientTwo);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
