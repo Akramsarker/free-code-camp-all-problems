@@ -49,3 +49,7 @@ const myConcat = (arr1, arr2) => {
 };
 
 console.log(myConcat([1, 2], [3, 4, 5]));
+
+// Set Default Parameters for Your Functions
+const increment = (number, value = 1) => number + value;
+console.log(increment(5));
