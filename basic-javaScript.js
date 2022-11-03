@@ -88,6 +88,10 @@ console.log(product2);
 const quotientTwo = 4.4 / 2.0;
 console.log(quotientTwo);
 
+// Finding a Remainder in JavaScript(20)
+const remainder = 11 % 3;
+console.log(remainder);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
