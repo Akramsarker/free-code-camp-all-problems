@@ -1,3 +1,7 @@
+// Comment Your JavaScript Code
+// This is an in-line comment.
+/* This is a multi-line comment */
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
