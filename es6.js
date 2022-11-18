@@ -82,3 +82,15 @@ const HIGH_TEMPERATURES = {
 const { today, tomorrow } = HIGH_TEMPERATURES;
 
 console.log(today, tomorrow);
+
+// Use Destructuring Assignment to Assign Variables from Objects
+const HIGH_TEMPERATURES2 = {
+  yesterday: 75,
+  today: 77,
+  tomorrow: 80,
+};
+
+const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES2;
+
+console.log(highToday);
+console.log(highTomorrow);
