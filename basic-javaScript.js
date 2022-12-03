@@ -1,6 +1,9 @@
-// Comment Your JavaScript Code
+// Comment Your JavaScript Code (1)
 // This is an in-line comment.
 /* This is a multi-line comment */
+
+// Declare JavaScript Variables (2)
+var myName = "Md Akram Sheikh";
 
 // Problem Number of 63
 function testNotEqual(val) {
