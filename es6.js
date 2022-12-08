@@ -110,3 +110,13 @@ let a = 8,
   b = 6;
 [a, b] = [b, a];
 console.log(a, b);
+
+// Destructuring via rest elements
+function removeFirstTwo(list) {
+  const [, , ...shorterList] = list;
+  return shorterList;
+}
+
+const source = [1, 2, 3, 4, 5];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
+console.log(sourceWithoutFirstTwo);
