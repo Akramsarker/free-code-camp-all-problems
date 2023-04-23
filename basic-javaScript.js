@@ -119,6 +119,15 @@ b *= 3;
 c *= 10;
 console.log(a, b, c);
 
+// Compound Assignment With Augmented Division(24)
+let a = 48;
+let b = 108;
+let c = 33;
+a /= 12;
+b /= 4;
+c /= 11;
+console.log(a, b, c);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
