@@ -128,6 +128,10 @@ b /= 4;
 c /= 11;
 console.log(a, b, c);
 
+// Escaping Literal Quotes in Strings
+const myStr = 'I am a "double quoted" string inside "double quotes".';
+console.log(myStr);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
