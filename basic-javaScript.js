@@ -128,8 +128,12 @@ b /= 4;
 c /= 11;
 console.log(a, b, c);
 
-// Escaping Literal Quotes in Strings
-const myStr = 'I am a "double quoted" string inside "double quotes".';
+// Escaping Literal Quotes in Strings(25)
+// const myStr = 'I am a "double quoted" string inside "double quotes".';
+// console.log(myStr);
+
+// Quoting Strings with Single Quotes(26)
+var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 console.log(myStr);
 
 // Problem Number of 63
