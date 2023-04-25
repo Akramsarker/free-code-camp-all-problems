@@ -136,6 +136,10 @@ console.log(a, b, c);
 var myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 console.log(myStr);
 
+// Escape Sequences in Strings(27)
+var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+console.log(myStr);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
