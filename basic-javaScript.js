@@ -140,6 +140,10 @@ console.log(myStr);
 var myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
 console.log(myStr);
 
+// Concatenating Strings with Plus Operator(28)
+const myStr = "This is the start." + " This is the end.";
+console.log(myStr);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
