@@ -144,6 +144,11 @@ console.log(myStr);
 const myStr = "This is the start." + " This is the end.";
 console.log(myStr);
 
+// Concatenating Strings with the Plus Equals Operator(29)
+let myStr = "This is the first sentence. ";
+myStr += "This is the second sentence.";
+console.log(myStr);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
