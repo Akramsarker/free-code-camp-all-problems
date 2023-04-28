@@ -149,6 +149,11 @@ let myStr = "This is the first sentence. ";
 myStr += "This is the second sentence.";
 console.log(myStr);
 
+// Constructing Strings with Variables(30)
+const myName = "Md Akram Sheik";
+const myStr = "Hello my name is " + myName + ", How are you?";
+console.log(myStr);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
