@@ -154,6 +154,12 @@ const myName = "Md Akram Sheik";
 const myStr = "Hello my name is " + myName + ", How are you?";
 console.log(myStr);
 
+// Appending Variables to Strings(31)
+const someAdjective = "awesome!";
+let myStr = "Learning to code is ";
+myStr += someAdjective;
+console.log(myStr);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
