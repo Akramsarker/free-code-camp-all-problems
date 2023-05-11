@@ -160,6 +160,12 @@ let myStr = "Learning to code is ";
 myStr += someAdjective;
 console.log(myStr);
 
+// Find the Length of a String(32)
+let lastNameLength = 0;
+const lastName = "Lovelace";
+lastNameLength = lastName.length;
+console.log(lastNameLength);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
