@@ -166,6 +166,12 @@ const lastName = "Lovelace";
 lastNameLength = lastName.length;
 console.log(lastNameLength);
 
+// Use Bracket Notation to Find the First Character in a String
+let firstLetterOfLastName = "";
+const lastName2 = "Lovelace";
+firstLetterOfLastName = lastName2[0];
+console.log(firstLetterOfLastName);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
