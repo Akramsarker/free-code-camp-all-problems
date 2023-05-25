@@ -177,6 +177,11 @@ let myStr = "Jello World";
 myStr = "Hello World";
 console.log(myStr);
 
+// Use Bracket Notation to Find the Nth Character in a String
+const lastName3 = "Lovelace";
+const thirdLetterOfLastName = lastName3[2];
+console.log(thirdLetterOfLastName);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
