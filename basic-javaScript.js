@@ -308,3 +308,155 @@ function isLess(a, b) {
 }
 
 console.log(isLess(10, 15));
+
+// Return Early Pattern for Functions
+function abTest(a, b) {
+  if (a < 0 || b < 0) {
+    return undefined;
+  }
+  return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
+}
+
+abTest(2, 2);
+
+// Counting Cards
+let count = 0;
+
+function cc(card) {
+  switch (card) {
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+      count++;
+      break;
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+      count--;
+      break;
+  }
+  if (count > 0) {
+    return count + " Bet";
+  } else {
+    return count + " Hold";
+  }
+}
+
+cc(2);
+cc(3);
+cc(7);
+cc("K");
+cc("A");
+
+// Build JavaScript Objects
+const myDog = {
+  name: "TOM",
+  legs: 4,
+  tails: 1,
+  friends: ["Jarry", "jarin"],
+};
+
+// Accessing Object Properties with Dot Notation
+const testObj1 = {
+  hat: "ballcap",
+  shirt: "jersey",
+  shoes: "cleats",
+};
+
+const hatValue = testObj1.hat;
+const shirtValue = testObj1.shirt;
+
+console.log(hatValue);
+console.log(shirtValue);
+
+// Accessing Object Properties with Bracket Notation
+const testObj = {
+  "an entree": "hamburger",
+  "my side": "veggies",
+  "the drink": "water",
+};
+
+const entreeValue = testObj["an entree"];
+const drinkValue = testObj["the drink"];
+
+console.log(entreeValue);
+console.log(drinkValue);
+
+// Accessing Object Properties with Variables
+const testObj2 = {
+  12: "Namath",
+  16: "Montana",
+  19: "Unitas",
+};
+const playerNumber = 16;
+const player = testObj2[playerNumber];
+
+console.log(player);
+
+// Updating Object Properties
+const myDog1 = {
+  name: "Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+myDog1.name = "Happy Coder";
+console.log(myDog1);
+
+// Add New Properties to a JavaScript Object
+const myDog2 = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+};
+
+myDog2.bark = "Woof";
+
+console.log(myDog2);
+
+// Delete Properties from a JavaScript Object
+const myDog3 = {
+  name: "Happy Coder",
+  legs: 4,
+  tails: 1,
+  friends: ["freeCodeCamp Campers"],
+  bark: "woof",
+};
+delete myDog3.tails;
+console.log(myDog3);
+
+// Using Objects for Lookups
+function phoneticLookup(val) {
+  var result = "";
+  var lookup = {
+    alpha: "Adams",
+    bravo: "Boston",
+    charlie: "Chicago",
+    delta: "Denver",
+    echo: "Easy",
+    foxtrot: "Frank",
+  };
+  result = lookup[val];
+  return result;
+}
+
+phoneticLookup("alpha");
+
+// Testing Objects for Properties
+function checkObj(obj, checkProp) {
+  let showObject = "";
+  const hasObject = obj.hasOwnProperty(checkProp);
+  if (hasObject == true) {
+    showObject = obj[checkProp];
+  } else {
+    showObject = "Not Found";
+  }
+  return showObject;
+}
+
+console.log(checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "gift"));
