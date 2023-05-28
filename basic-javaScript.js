@@ -460,3 +460,101 @@ function checkObj(obj, checkProp) {
 }
 
 console.log(checkObj({ gift: "pony", pet: "kitten", bed: "sleigh" }, "gift"));
+
+// Manipulating Complex Objects
+const myMusic = [
+  {
+    artist: "Billy Joel",
+    title: "Piano Man",
+    release_year: 1973,
+    formats: ["CD", "8T", "LP"],
+    gold: true,
+  },
+  {
+    artist: "Bella Elish",
+    title: "Hello Welcome Home",
+    release_year: 2003,
+    formats: ["CD", "8T", "LP"],
+    gold: true,
+  },
+];
+
+console.log(myMusic);
+
+// Accessing Nested Objects
+const myStorage = {
+  car: {
+    inside: {
+      "glove box": "maps",
+      "passenger seat": "crumbs",
+    },
+    outside: {
+      trunk: "jack",
+    },
+  },
+};
+
+const gloveBoxContents = myStorage.car.inside["glove box"];
+
+console.log(gloveBoxContents);
+
+// Accessing Nested Arrays
+const myPlants = [
+  {
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"],
+  },
+  {
+    type: "trees",
+    list: ["fir", "pine", "birch"],
+  },
+];
+
+const secondTree = myPlants[1].list[1];
+
+// Record Collection
+const recordCollection = {
+  2548: {
+    albumTitle: "Slippery When Wet",
+    artist: "Bon Jovi",
+    tracks: ["Let It Rock", "You Give Love a Bad Name"],
+  },
+  2468: {
+    albumTitle: "1999",
+    artist: "Prince",
+    tracks: ["1999", "Little Red Corvette"],
+  },
+  1245: {
+    artist: "Robert Palmer",
+    tracks: [],
+  },
+  5439: {
+    albumTitle: "ABBA Gold",
+  },
+};
+
+function updateRecords(records, id, prop, value) {
+  if (value === "") {
+    delete records[id][prop];
+  } else if (prop !== "tracks" && value !== "") {
+    records[id][prop] = value;
+  } else if (prop === "tracks" && value !== "") {
+    if (records[id].hasOwnProperty("tracks") === false) {
+      records[id][prop] = [];
+    }
+    records[id][prop].push(value);
+  }
+  return records;
+}
+
+console.log(updateRecords(recordCollection, 5439, "artist", "ABBA"));
+
+// Iterate with JavaScript While Loops
+const myArray = [];
+let i = 5;
+while (i >= 0) {
+  myArray.push(i);
+  i--;
+}
+
+console.log(myArray);
