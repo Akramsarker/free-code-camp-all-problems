@@ -558,3 +558,201 @@ while (i >= 0) {
 }
 
 console.log(myArray);
+
+// Iterate with JavaScript For Loops
+const myArray1 = [];
+for (let i = 1; i <= 5; i++) {
+  myArray1.push(i);
+}
+console.log(myArray1);
+
+// Iterate Odd Numbers With a For Loop
+const myArray2 = [];
+for (let i = 1; i < 10; i += 2) {
+  myArray2.push(i);
+}
+console.log(myArray2);
+
+// Count Backwards With a For Loop
+const myArray3 = [];
+
+// Only change code below this line
+for (let i = 9; i > 0; i -= 2) {
+  myArray3.push(i);
+}
+
+console.log(myArray3);
+
+// Iterate Through an Array with a For Loop
+const myArr = [2, 3, 4, 5, 6];
+let total = 0;
+// Only change code below this line
+for (let i = 0; i < myArr.length; i++) {
+  console.log([i]);
+  total += myArr[i];
+}
+
+console.log(total);
+
+// Nesting For Loops
+function multiplyAll(arr) {
+  let product = 1;
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr[i].length; j++) {
+      product = product * arr[i][j];
+    }
+  }
+  return product;
+}
+
+console.log(
+  multiplyAll([
+    [1, 2],
+    [3, 4],
+    [5, 6, 7],
+  ])
+);
+
+// Iterate with JavaScript Do...While Loops
+const myArray4 = [];
+let k = 10;
+
+// Only change code below this line
+do {
+  myArray4.push(k);
+  k++;
+} while (i < 5);
+
+console.log(myArray4);
+console.log(i);
+
+// Replace Loops using Recursion
+function sum(arr, n) {
+  if (n <= 0) {
+    return 0;
+  } else {
+    return sum(arr, n - 1) + arr[n - 1];
+  }
+}
+
+console.log(sum([1], 0));
+
+// Profile Lookup
+const contacts = [
+  {
+    firstName: "Akira",
+    lastName: "Laine",
+    number: "0543236543",
+    likes: ["Pizza", "Coding", "Brownie Points"],
+  },
+  {
+    firstName: "Harry",
+    lastName: "Potter",
+    number: "0994372684",
+    likes: ["Hogwarts", "Magic", "Hagrid"],
+  },
+  {
+    firstName: "Sherlock",
+    lastName: "Holmes",
+    number: "0487345643",
+    likes: ["Intriguing Cases", "Violin"],
+  },
+  {
+    firstName: "Kristian",
+    lastName: "Vos",
+    number: "unknown",
+    likes: ["JavaScript", "Gaming", "Foxes"],
+  },
+];
+
+function lookUpProfile(name, prop) {
+  for (let i = 0; i < contacts.length; i++) {
+    if (contacts[i].firstName === name) {
+      if (prop in contacts[i]) {
+        return contacts[i][prop];
+      } else {
+        return "No such property";
+      }
+    }
+  }
+  return "No such contact";
+}
+
+console.log(lookUpProfile("Kristian", "lastName"));
+
+// Generate Random Fractions with JavaScript
+function randomFraction() {
+  let result = 0;
+  while (result === 0) {
+    result = Math.random();
+  }
+  return result;
+}
+
+console.log(randomFraction());
+
+// Generate Random Whole Numbers with JavaScript
+function randomWholeNum() {
+  return Math.floor(Math.random() * 10);
+}
+console.log(randomWholeNum());
+
+// Generate Random Whole Numbers within a Range
+function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+}
+
+console.log(randomRange(10, 30));
+
+// Use the parseInt Function
+function convertToInteger(str) {
+  const convertToInteger = parseInt(str);
+  return convertToInteger;
+}
+
+console.log(convertToInteger("56"));
+
+// Use the parseInt Function with a Radix
+function convertToInteger(str) {
+  return parseInt(str, 2);
+}
+
+console.log(convertToInteger("10011"));
+
+// Use the Conditional (Ternary) Operator
+function checkEqual(a, b) {
+  return a === b ? "Equal" : "Not Equal";
+}
+
+console.log(checkEqual(1, 2));
+
+// Use Multiple Conditional (Ternary) Operators
+function checkSign(num) {
+  return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
+}
+
+console.log(checkSign(0));
+
+// Use Recursion to Create a Countdown
+function countdown(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const arr = countdown(n - 1);
+    arr.unshift(n);
+    return arr;
+  }
+}
+console.log(countdown(5));
+
+// Use Recursion to Create a Range of Numbers
+function rangeOfNumbers(startNum, endNum) {
+  if (endNum < startNum) {
+    return [];
+  } else {
+    const numbers = rangeOfNumbers(startNum, endNum - 1);
+    numbers.push(endNum);
+    return numbers;
+  }
+}
+console.log(rangeOfNumbers(1, 5));
