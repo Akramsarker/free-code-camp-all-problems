@@ -187,6 +187,11 @@ const lastName4 = "Lovelace";
 const lastLetterOfLastName = lastName[lastName4.length - 1];
 console.log(lastLetterOfLastName);
 
+// Use Bracket Notation to Find the Nth-to-Last Character in a String(37)
+const lastName5 = "Lovelace";
+const secondToLastLetterOfLastName = lastName[lastName5.length - 2];
+console.log(secondToLastLetterOfLastName);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
