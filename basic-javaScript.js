@@ -192,6 +192,15 @@ const lastName5 = "Lovelace";
 const secondToLastLetterOfLastName = lastName[lastName5.length - 2];
 console.log(secondToLastLetterOfLastName);
 
+// Word Blanks(38)
+const myNoun = "dog";
+const myAdjective = "big";
+const myVerb = "ran";
+const myAdverb = "quickly";
+var wordBlanks =
+  "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
+console.log(wordBlanks);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
