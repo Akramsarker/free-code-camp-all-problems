@@ -205,6 +205,10 @@ console.log(wordBlanks);
 // const myArray = ["cat",2];
 // console.log(myArray)
 
+// Nest one Array within Another Array(39)
+// const myArray = [["Akram Sheikh", 23]];
+// console.log(myArray)
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
