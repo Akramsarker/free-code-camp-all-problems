@@ -201,6 +201,10 @@ var wordBlanks =
   "The " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
 console.log(wordBlanks);
 
+// Store Multiple Values in one Variable using JavaScript Arrays(38)
+// const myArray = ["cat",2];
+// console.log(myArray)
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
