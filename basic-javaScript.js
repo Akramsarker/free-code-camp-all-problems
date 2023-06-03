@@ -214,6 +214,11 @@ console.log(wordBlanks);
 // const myData = myArray[0]
 // console.log(myData)
 
+// Modify Array Data With Indexes(41)
+const myArray = [18, 64, 99];
+myArray[0] = 45;
+console.log(myArray);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
