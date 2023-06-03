@@ -209,6 +209,11 @@ console.log(wordBlanks);
 // const myArray = [["Akram Sheikh", 23]];
 // console.log(myArray)
 
+// Access Array Data with Indexes(40)
+// const myArray = [50, 60, 70, 90,100];
+// const myData = myArray[0]
+// console.log(myData)
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
