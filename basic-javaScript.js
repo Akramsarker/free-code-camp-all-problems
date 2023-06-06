@@ -219,6 +219,17 @@ const myArray = [18, 64, 99];
 myArray[0] = 45;
 console.log(myArray);
 
+// Access Multi-Dimensional Arrays With Indexes(42)
+const myArray = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [[10, 11, 12], 13, 14],
+];
+
+const myData = myArray[2][1];
+console.log(myData);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
