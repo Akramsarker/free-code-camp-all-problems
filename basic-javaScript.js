@@ -230,6 +230,21 @@ const myArray = [
 const myData = myArray[2][1];
 console.log(myData);
 
+// Manipulate Arrays With push Method(43)
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+myArray.push(["dog", 3]);
+console.log(myArray);
+
+// Manipulate Arrays With pop Method(44)
+const myArray = [
+  ["John", 23],
+  ["cat", 2],
+];
+const removedFromMyArray = myArray.pop();
+console.log(myArray, removedFromMyArray);
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
