@@ -245,6 +245,15 @@ const myArray = [
 ];
 const removedFromMyArray = myArray.pop();
 console.log(myArray, removedFromMyArray);
+
+// Manipulate Arrays With shift Method(45)
+const myArray = [
+  ["John", 23],
+  ["dog", 3],
+];
+const removedFromMyArray1 = myArray.shift();
+console.log(myArray, removedFromMyArray1);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
