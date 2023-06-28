@@ -263,6 +263,15 @@ myArray.shift();
 myArray.unshift(["Paul", 35]);
 console.log(myArray);
 
+// Shopping List
+const myList = [
+  ["Akram Sheikh", 23],
+  ["Rabbi", 22],
+  ["Nasim Uddin", 24],
+  ["Nasin Uddi", 28],
+  ["Toha", 22],
+];
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
