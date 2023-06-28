@@ -55,6 +55,10 @@ console.log(FCC, fact);
 const sum = 10 + 10;
 console.log(sum);
 
+// Subtract One Number from Another with JavaScript
+const difference = 45 - 33;
+
+console.log(difference);
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
