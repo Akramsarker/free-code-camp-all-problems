@@ -263,7 +263,7 @@ myArray.shift();
 myArray.unshift(["Paul", 35]);
 console.log(myArray);
 
-// Shopping List
+// Shopping List(47)
 const myList = [
   ["Akram Sheikh", 23],
   ["Rabbi", 22],
@@ -271,6 +271,13 @@ const myList = [
   ["Nasin Uddi", 28],
   ["Toha", 22],
 ];
+
+// Write Reusable JavaScript with Functions(47)
+function reusableFunction() {
+  console.log("Hi World");
+}
+
+reusableFunction();
 
 // Problem Number of 63
 function testNotEqual(val) {
