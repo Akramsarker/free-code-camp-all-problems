@@ -272,13 +272,19 @@ const myList = [
   ["Toha", 22],
 ];
 
-// Write Reusable JavaScript with Functions(47)
+// Write Reusable JavaScript with Functions(48)
 function reusableFunction() {
   console.log("Hi World");
 }
 
 reusableFunction();
 
+// Passing Values to Functions with Arguments(49)
+function functionWithArgs(numOne, numTwo) {
+  console.log(numOne + numTwo);
+}
+
+functionWithArgs(7, 9);
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
