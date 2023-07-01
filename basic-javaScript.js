@@ -284,6 +284,13 @@ function functionWithArgs(numOne, numTwo) {
   console.log(numOne + numTwo);
 }
 
+// Return a Value from a Function with Return(50)
+function timesFive(number) {
+  return number * 5;
+}
+const answer = timesFive(5);
+console.log(answer);
+
 functionWithArgs(7, 9);
 // Problem Number of 63
 function testNotEqual(val) {
