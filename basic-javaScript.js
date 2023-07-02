@@ -283,6 +283,7 @@ reusableFunction();
 function functionWithArgs(numOne, numTwo) {
   console.log(numOne + numTwo);
 }
+functionWithArgs(7, 9);
 
 // Return a Value from a Function with Return(50)
 function timesFive(number) {
@@ -291,7 +292,24 @@ function timesFive(number) {
 const answer = timesFive(5);
 console.log(answer);
 
-functionWithArgs(7, 9);
+// Global Scope and Functions(51)
+let myGlobal = 10;
+
+function fun1() {
+  oopsGlobal = 5;
+}
+
+function fun2() {
+  let output = "";
+  if (typeof myGlobal != "undefined") {
+    output += "myGlobal: " + myGlobal;
+  }
+  if (typeof oopsGlobal != "undefined") {
+    output += " oopsGlobal: " + oopsGlobal;
+  }
+  console.log(output);
+}
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
