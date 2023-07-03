@@ -310,6 +310,14 @@ function fun2() {
   console.log(output);
 }
 
+// Local Scope and Functions(52)
+function myLocalScope() {
+  const myVar = "My Local Scope";
+  console.log("inside myLocalScope", myVar);
+}
+myLocalScope();
+console.log("outside myLocalScope", myVar);
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
