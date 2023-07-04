@@ -318,6 +318,14 @@ function myLocalScope() {
 myLocalScope();
 console.log("outside myLocalScope", myVar);
 
+// Global vs. Local Scope in Functions(53)
+const outerWear = "T-Shirt";
+function myOutfit() {
+  const outerWear = "sweater";
+  return outerWear;
+}
+
+console.log(myOutfit());
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
