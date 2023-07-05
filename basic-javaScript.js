@@ -324,8 +324,19 @@ function myOutfit() {
   const outerWear = "sweater";
   return outerWear;
 }
-
 console.log(myOutfit());
+
+// Understanding Undefined Value returned from a Function(54)
+let sum = 0;
+function addThree() {
+  return (sum = sum + 3);
+}
+function addFive() {
+  sum = sum + 5;
+}
+console.log(addThree());
+console.log(addFive());
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
