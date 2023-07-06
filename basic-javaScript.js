@@ -353,11 +353,25 @@ function nextInLine(arr, item) {
   return removed;
 }
 let testArr = [1, 2, 3, 4, 5];
-
-// Display code
 console.log("Before: " + JSON.stringify(testArr));
 console.log(nextInLine(testArr, 6));
 console.log("After: " + JSON.stringify(testArr));
+
+// Understanding Boolean Values(57)
+function welcomeToBooleans() {
+  return true;
+}
+console.log(welcomeToBooleans());
+
+// Use Conditional Logic with If Statements(58)
+function trueOrFalse(wasThatTrue) {
+  if (wasThatTrue) {
+    return "Yes, that was true";
+  }
+  return "No, that was false";
+}
+
+console.log(trueOrFalse(true));
 
 // Problem Number of 63
 function testNotEqual(val) {
