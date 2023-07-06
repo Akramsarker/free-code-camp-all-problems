@@ -337,6 +337,28 @@ function addFive() {
 console.log(addThree());
 console.log(addFive());
 
+// Assignment with a Returned Value(55)
+let processed = 0;
+
+function processArg(num) {
+  return (num + 3) / 5;
+}
+processed = processArg(7); // Equal to 2
+console.log(processed);
+
+// Stand in Line(56)
+function nextInLine(arr, item) {
+  arr.push(item);
+  const removed = arr.shift();
+  return removed;
+}
+let testArr = [1, 2, 3, 4, 5];
+
+// Display code
+console.log("Before: " + JSON.stringify(testArr));
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
 // Problem Number of 63
 function testNotEqual(val) {
   if (val != 99) {
