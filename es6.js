@@ -148,3 +148,12 @@ function makeList(arr) {
 }
 
 const failuresList = makeList(result.failure);
+
+// Write Concise Object Literal Declarations Using Object Property Shorthand(15)
+const createPerson = (name, age, gender) => {
+  return {
+    name,
+    age,
+    gender,
+  };
+};
